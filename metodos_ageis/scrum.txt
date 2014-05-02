@@ -1,0 +1,49 @@
+SCRUM
+	Ciclos
+	Papeis
+		Comprometidos
+			Scrum Master
+			Product Owner
+			Scrum Team
+		Envolvidos
+			Stakeholders - interesse no produto
+	WIP por ciclos
+	Etapas
+		Planejamento do produto (release, marco)
+			identificacao de requisitos
+			Histórias de usuário
+				USER + GOAL + REASON
+				atores, prioridades, estimativa (NUT)
+				conversa. detalhes e alteracoes
+				granularidade
+					epico -> temas -> historias
+				propriedades
+					INVEST
+					Independent
+					Negociavel
+					V
+					Estimável
+					Small
+					T
+				documentacao: casos de teste
+			Ciclos
+			Backlog do produto
+		Sprint (ciclos)
+			Comprometimento de não mudança das historias
+			Planejamento
+				História -> tarefas -> horas
+			Backlog sprint
+		Reunioes
+			planejamento
+				inicio sprint
+			daily meeting
+				alinhar, informar bloqueios
+			retrospectiva
+				avaliar o funcionamento do scrum
+			revisao
+				com stakeholders
+				aprovacao do que foi feito
+				proximas etapas
+	
+
+Kanban
