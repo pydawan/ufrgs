@@ -1,0 +1,21 @@
+Nome: Germano Andersson, matricula 137719
+
+1) Nas suas palavras, defina inteligência e porque testes de inteligência podem esconder a medida real dela?
+    Acredito que inteligência é a habilidade de promover o bem resolvendo problemas existentes. Testes de inteligência podem esconder a medida real por não analisar todas dimensões do homem, por exemplo inteligência emocional.
+
+2) O que é o teste de Turing e o que ele pretende mostrar?
+    O teste de Turing é um teste de quanto uma máquina pode exibir comportamento inteligente equivalente a um ser humano ou indistinguível. Ele pretend que mostrar que uma máquina pode fazer fazer bem o 'jogo da imitação', ao ponto de uma pessoa, com determinado grupo de perguntas pré-definidas, não conseguir distinguir, analisando as respostas, uma máquina de um homem.
+    
+3) Por que jogos se tornaram a primeira tentativa de validação de métodos de Inteligência Artificial?
+    Pela possibilidade de estrutura de dados ricas em características e movimentos, com enredos que simulam uma sociedade complexa e com alto potencial para implementação de inteligência artificial.
+
+4) Defina Inteligência Artificial forte.
+    Uma frente de pesquisa que acredita que a mente do ser humano é apenas um algoritmo muito complexo, logo implementável. Neste caso, a inteligência humana poderia ser integralmente implementada em uma máquina.
+
+5) Defina IA Simbólica e IA Computacional.
+    IA Simbolica: Linha de pesquisa que busca simular o comportamento inteligente, sem preocupar-se com suas causas responsáveis. O núcleo desta linha de pesquisa consiste em mapear o maior número possível de situações e seus contextos e transformá-los em símbolos para que possam ser manipulados. Um exemplo são os sistemas especialistas.
+    IA Computacional: Busca modelar a estrutura cerebral do ser humano para, assim, obter-se a inteligência. São exemplos as redes neurais.
+
+6) Observe o grupo de pesquisa de Inteligência Artificial da pós-graduação da UFRGS. Informe o nome dos professores, e informe se ele trabalha com IA Simbólica ou IA Computacional.
+    IA Simbolica: Aline Villacencio, Ana Bazzan, Álvaro Moreira, Claudio Geyer, Dante Barone, Edson Prestes, Lamb, Mara Abel, Rosa Viccari
+    IA COmputacional: Paulo Engel, Lamb

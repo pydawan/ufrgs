@@ -1,0 +1,63 @@
+
+21/08/13
+revisao
+1. analise sintatica: reconhecimento de sentencas de determinada gramatica
+2. podemos usar ER como formalismo reconhecedor na analise sintatica? nao, pois precisamos de recursao(GLC)
+3. o que eh uma gramatica? definicao de uma linguagem. utilizaremos glc.
+4. 3 caracteristicas que uma gramatica deve ter para ser analisada: livre vazio, fatorada a esquerda, sem recursividade a esquerda
+
+---++ Analise Sintatica
+---+++ tratamento de erros
+---++++ recuperacao em nivel de frase
+    pode levar ao infinito. Pode ser resolvido por criterio de parada.
+---++++ producao de erro
+    necessario conhecer/prever os erros que o programador cometera
+---+++ estrategias
+descendente: S -> palavra
+ascendente: palavra -> S
+
+removendo recursao a esquerda
+A -> Aa | b
+=
+A -> bR
+R -> aR | vazio
+
+
+plano aula de hoje: como reconhecer se a sentenca pertence a grmamatica?
+
+reconhecedor(parser) -> arvore de derivacao
+
+
+
+11/09
+revisao LR0
+
+E -> E+n | n
+
+passo1. estender a gramatica 
+E' -> E
+E -> E+n | n
+
+passo2. criar automato deterministico
+
+estado1
+E' -> .E
+E -> .E+n
+E -> .n
+
+(fica ruim representar automato 
+
+
+passo3. tabela
+linhas - estados
+colunas - simbolos terminais e nao terminais + $
+
+ponto no final faz reducao
+ponto no meio faz empilhamento
+
+
+SLR1
+
+atua sobre o mesmo automato criado por lr0. diferenca na hora de tabelar a regra de reducao, resolvendo possiveis ambiguidades(reducao e empilhamento simultaneo).
+
+gramatica nao eh LR0 caso um estado do automato tenha acao de reducao e empilhamento(empilha-reduz) simultaneamente. outro possivel conflito eh reduz-reduz, quando um estado reduz apos nao-terminais distintos.

@@ -1,0 +1,56 @@
+Jogo da Forca
+
+* Manual do Usuário
+
+Introdução
+
+O Jogo da Forca é um jogo tradicional que consiste em desvendar uma palavra letra a letra, através de tentativas sucessivas. Considerado um jogo interessante e divertido por muitos, o Jogo da Forca possui milhares de fãs ao redor de todo o mundo, tanto pela sua capacidade de entreter as pessoas quanto pela sua fácil jogabilidade. Por ser um jogo altamente difundido, o Jogo da Forca possui várias versões de programadores variados, cada uma com suas características próprias, mas com a mesma essência. A versão 0.7b do WinForca é mais uma que vem para se somar a esta vasta coleção de jogos da forca, propondo um jogo não apenas regional, já que possui palavras em três idiomas.
+
+
+Menu Principal
+
+ - Novo jogo: dá início a um novo jogo;
+
+ - Incluir palavra: opção ao usuário de incluir uma nova palavra em um dos três idiomas (inglês, espanhol e português) e em uma das cinco categorias do jogo (objetos, animais, cores, frutas e verduras e diversos);
+
+ - Trocar jogador: opção que disponibiliza a troca de jogador sem que se tenha que sair do programa;
+
+ - Trocar idioma: disponibiliza a troca de idioma durante a execução do programa;
+
+ - Hall da fama: fornece o nome e o score dos dez melhores colocados no jogo da forca;
+
+ - Sair: finaliza o programa. 
+
+
+Como incluir uma nova palavra				
+
+ - No menu principal selecione a opção Incluir palavra;
+    * Selecione um dos três idiomas disponíveis: Português, Espanhol, Inglês; 
+    * Selecione uma das cinco categorias: Objetos, Animais, Cores, Frutas e verduras, Diversos; 
+    * Digite a palavra a ser inculída;
+    * Caso a palavra já exista no dicionário da língua e da categoria escolhidas, uma mensagem informando que a palavra já existe será exibida, caso contrário será exibida a mensagem de palavra incluída com sucesso.
+
+
+Como trocar de jogador
+
+ - No menu principal selecione a opção Trocar jogador;
+    * Digite o nome do novo jogador com até 15 caracteres.
+
+
+Como trocar de idioma
+
+ - No menu principal selecione a opção Trocar idioma;
+    * Selecione um dos três idiomas disponíveis.
+
+
+Informações sobre o jogo
+
+ - Versão 0.7b do WinForca 
+ - Desenvolvido por Marcel F. Uemura e Sérgio R. F. Dutra Filho
+ - Programado em Linguagem Pascal
+
+Informações sobre os desenvolvedores
+
+ - Marcel Fischer Uemura: 19 anos, cursando Engenharia de Computação na UFRGS (Universidade Federal do Rio Grande do Sul);
+ - Sérgio Roberto Finger Dutra Filho: 18 anos, cursando Engenharia de Computação na UFRGS (Universidade Federal do Rio Grande do Sul).
+

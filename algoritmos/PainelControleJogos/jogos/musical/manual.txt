@@ -1,0 +1,83 @@
+MELODY MASTER - Manual do Usuário
+
+DADOS DO PROGRAMA
+
+Autor: Diego Kasper Cardoso, (F)
+Versão: 1.0
+Ano: 2004/1
+Software desenvolvido para a disciplina de Algoritmos e Programação (INF 1202) do Instituto de Informática – UFRGS – com a supervisão da professora Cora Ribeiro.
+
+
+O QUE É O MELODY MASTER?
+
+Software de educação musical que utiliza o alto-falante do sistema para emitir sons e testar a habilidade do usuário em reconhecer diferentes intervalos melódicos.                                 
+
+
+SOBRE COMO OPERAR COM O PROGRAMA
+
+Este programa está estruturado em 7 níveis de dificuldade. Cada nível, possui 10 questões. Cada pergunta consiste em um intervalo melódico gerado aleatoriamente que você deve identificar conforme as opções dadas. Para responder a uma pergunta, digite o caractere entre "<>" correspondente à opção desejada e tecle  <ENTER>.
+
+     
+UM EXEMPLO DE PERGUNTA
+    
+PERGUNTA 5:
+Nota 1 (VOCÊ VAI OUVIR A NOTA) - Nota 2 (VOCÊ VAI OUVIR A NOTA)
+O intervalo entre as notas eh uma segunda Menor<E> ou uma segunda Maior<M>?
+[Repetir<R>]
+Digite uma resposta e <Enter>
+
+
+PONTUAÇÃO E NÍVEIS
+
+- Enquanto você responde, seu numero de acertos é contabilizado
+- Para passar de nível são necessários pelo menos 7 acertos
+- Uma vez ultrapassado um nível, seu acesso será liberado aos níveis anteriores
+- Se, ao refazer um nível, seu escore for melhor que o de alguma execução anterior, sua nova pontuação será gravada
+
+
+SOBRE OS ARQUIVOS USADOS POR ESTE PROGRAMA
+    
+Um arquivo com o seu ‘USERNAME + extensão .DAT’ foi criado no mesmo diretório de onde você executou este programa. Nele ficarão armazenados os dados a respeito do seu desempenho. Não delete nem edite o arquivo fora deste programa ou esses dados serão perdidos.                                                                     
+    
+Se desejar mover o arquivo executável para outro diretório, mova o arquivo “SeuNomeAqui.dat” junto com ele.      
+
+
+SOBRE O CONTEÚDO DOS NÍVEIS
+    
+Um pouco de teoria musical: 
+    
+A escala diatônica tem 7 notas:
+C, D, E, F, G, A, B      
+    
+Entre estas notas, temos 12 semitons:
+C, C#, D, D#, E, F, F#, G, G#, A, A#, B
+    
+O que este software faz é gerar randomicamente intervalos ascendentes e descendentes conforme grupos preestabelecidos (veja o quadro).    
+   
+
+TABELA DE REFERENCIA
+    
+Nível  Intervalos  Exemplos             Distancia em semitons   
+1      Segundas    C-Db - 2a menor      1                        
+                   C-D  - 2a maior      2                        
+2      Terças      C-Eb - 3a menor      3                         
+                   C-E  - 3a maior      4                        
+3      Quartas     C-Fb - 4a diminuta   4                        
+                   C-F  - 4a justa      5                        
+                   C-F# - 4a aumentada  6                        
+4      Quintas     C-Gb - 5a diminuta   6                         
+                   C-G  - 5a justa      7                         
+                   C-G# - 5a aumentada  8                        
+5      Oitavas     C-Cb - 8a diminuta   11                      
+                   C-C  - 8a justa      12                       
+                   C-C# - 8a aumentada  13                        
+6      Sextas      C-Ab - 6a menor      8                          
+                   C-A  - 6a maior      9                         
+7      Sétimas     C-Bb - 7a menor      10                          
+                   C-B  - 7a maior      11     
+
+
+O MODO MESTRE
+
+Existe uma maneira de ver as respostas das perguntas antes de respondê-las:
+Entre com o username “melmas1978”. A cada pergunta, o software informará que intervalo foi gerado randomicamente.

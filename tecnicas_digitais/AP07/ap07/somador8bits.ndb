@@ -1,0 +1,142 @@
+NDB006
+The number of symbol table entries is: 25
+The length of the symbol table is: 735
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|somadorcompleto:2|
+B	|somadorcompleto:2|meiosomador:1|
+d	|somadorcompleto:2|meiosomador:2|
+"(	|somadorcompleto:31|
+"=	|somadorcompleto:31|meiosomador:1|
+"`	|somadorcompleto:31|meiosomador:2|
+#%	|somadorcompleto:35|
+#:	|somadorcompleto:35|meiosomador:1|
+#]	|somadorcompleto:35|meiosomador:2|
+$"	|somadorcompleto:37|
+$7	|somadorcompleto:37|meiosomador:1|
+$Z	|somadorcompleto:37|meiosomador:2|
+$}	|somadorcompleto:38|
+%4	|somadorcompleto:38|meiosomador:1|
+%W	|somadorcompleto:38|meiosomador:2|
+%z	|somadorcompleto:25|
+&1	|somadorcompleto:25|meiosomador:1|
+&T	|somadorcompleto:25|meiosomador:2|
+&w	|somadorcompleto:26|
+'.	|somadorcompleto:26|meiosomador:1|
+'Q	|somadorcompleto:26|meiosomador:2|
+'t	|somadorcompleto:1|
+(*	|somadorcompleto:1|meiosomador:1|
+(L	|somadorcompleto:1|meiosomador:2|
+
+The number of name info structs is : 106
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdp	!	Cin	""
+#	IGdq	!	Cout	n
+$	IGdq	!	S1	u
+%	IGdq	!	S2	m
+&	IGdq	!	S3	t
+'	IGdq	!	S4	s
+(	IGdq	!	S5	r
+)	IGdq	!	S6	q
+*	IGdq	!	S7	p
++	IGdq	!	S8	o
+,	IGdp	!	X1	"!
+-	IGdp	!	X2	~
+.	IGdp	!	X3	"&
+/	IGdp	!	X4	}
+0	IGdp	!	X5	"%
+1	IGdp	!	X6	z
+2	IGdp	!	X7	"$
+3	IGdp	!	X8	x
+4	IGdp	!	Y1	"(
+5	IGdp	!	Y2	v
+6	IGdp	!	Y3	"'
+7	IGdp	!	Y4	|
+8	IGdp	!	Y5	{
+9	IGdp	!	Y6	y
+:	IGdp	!	Y7	"#
+;	IGdp	!	Y8	w
+<	IVOQ	't	=	:4	%m
+=	INu}	't	<	Cout	%m
+>	IVOQ	(*	A	:1	%v
+?	IVOQ	(*	@	:2	%w
+@	INu}	(*	?	Cout	%w
+A	INu}	(*	>	S	%v
+B	IVOQ	(L	E	:1	&"
+C	IVOQ	(L	D	:2	&#
+D	INu}	(L	C	Cout	&#
+E	INu}	(L	B	S	&"
+F	IVOQ	%z	G	:4	${
+G	INu}	%z	F	Cout	${
+H	IVOQ	&1	K	:1	%&
+I	IVOQ	&1	J	:2	%'
+J	INu}	&1	I	Cout	%'
+K	INu}	&1	H	S	%&
+L	IVOQ	&T	O	:1	%0
+M	IVOQ	&T	N	:2	%1
+N	INu}	&T	M	Cout	%1
+O	INu}	&T	L	S	%0
+P	IVOQ	&w	Q	:4	%E
+Q	INu}	&w	P	Cout	%E
+R	IVOQ	'.	U	:1	%N
+S	IVOQ	'.	T	:2	%O
+T	INu}	'.	S	Cout	%O
+U	INu}	'.	R	S	%N
+V	IVOQ	'Q	Y	:1	%X
+W	IVOQ	'Q	X	:2	%Y
+X	INu}	'Q	W	Cout	%Y
+Y	INu}	'Q	V	S	%X
+Z	IVOQ	.	[	:4	"m
+[	INu}	.	Z	Cout	"m
+\	IVOQ	B	_	:1	"w
+]	IVOQ	B	^	:2	"x
+^	INu}	B	]	Cout	"x
+_	INu}	B	\	S	"w
+`	IVOQ	d	c	:1	#$
+a	IVOQ	d	b	:2	#%
+b	INu}	d	a	Cout	#%
+c	INu}	d	`	S	#$
+d	IVOQ	"(	e	:4	#9
+e	INu}	"(	d	Cout	#9
+f	IVOQ	"=	i	:1	#B
+g	IVOQ	"=	h	:2	#C
+h	INu}	"=	g	Cout	#C
+i	INu}	"=	f	S	#B
+j	IVOQ	"`	m	:1	#L
+k	IVOQ	"`	l	:2	#M
+l	INu}	"`	k	Cout	#M
+m	INu}	"`	j	S	#L
+n	IVOQ	#%	o	:4	#a
+o	INu}	#%	n	Cout	#a
+p	IVOQ	#:	s	:1	#j
+q	IVOQ	#:	r	:2	#k
+r	INu}	#:	q	Cout	#k
+s	INu}	#:	p	S	#j
+t	IVOQ	#]	w	:1	#t
+u	IVOQ	#]	v	:2	#u
+v	INu}	#]	u	Cout	#u
+w	INu}	#]	t	S	#t
+x	IVOQ	$"	y	:4	$+
+y	INu}	$"	x	Cout	$+
+z	IVOQ	$7	}	:1	$4
+{	IVOQ	$7	|	:2	$5
+|	INu}	$7	{	Cout	$5
+}	INu}	$7	z	S	$4
+~	IVOQ	$Z	"#	:1	$>
+"!	IVOQ	$Z	""	:2	$?
+""	INu}	$Z	"!	Cout	$?
+"#	INu}	$Z	~	S	$>
+"$	IVOQ	$}	"%	:4	$S
+"%	INu}	$}	"$	Cout	$S
+"&	IVOQ	%4	")	:1	$\
+"'	IVOQ	%4	"(	:2	$]
+"(	INu}	%4	"'	Cout	$]
+")	INu}	%4	"&	S	$\
+"*	IVOQ	%W	"-	:1	$f
+"+	IVOQ	%W	",	:2	$g
+",	INu}	%W	"+	Cout	$g
+"-	INu}	%W	"*	S	$f

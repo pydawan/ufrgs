@@ -1,0 +1,12 @@
+;; The first three lines of this file were inserted by DrScheme. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname lab3) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #8(#t constructor repeating-decimal #f #t none #f ())))
+(define-struct nodo (valor esq dir)) 
+(define (teste ab)
+	(cond
+		[(nodo? ab)(cons (nodo-valor ab) (append (teste (nodo-esq ab)) (teste (nodo-dir ab))))]
+                [else empty]
+                )
+  )
+
+(teste (make-nodo 1 (make-nodo 2 (make-nodo 4 false false) (make-nodo 5 false false)) (make-nodo 3 (make-nodo 6 false false) false))) 

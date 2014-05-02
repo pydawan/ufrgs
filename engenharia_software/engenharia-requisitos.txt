@@ -1,0 +1,31 @@
+Tipos
+	funcionais,nao funcionais, inversos
+
+Atividades genericas
+	determinacao/elicitacao
+		tecnicas: comunicacao,observacao,estudo
+	expressao
+		sentencas
+	validacao
+
+conceitos basicos
+
+ATOR -> CASO DE USO
+
+a. conceitos avancados
+
+b. generalizacao
+
+c. variantes
+
+d. includes
+
+
+e. extends: dado uma condicao, novos passos:
+ex: saque no caixa eletronico. se >1000, demanda tb aprovacao gerente.
+
+
+o mais importante: descricao dos casos de uso:
+Id,nome,ator,Descricao
+breve,pre-condicao,pos-condicao,fluxos(principal,alternativo,variantes),
+RNF

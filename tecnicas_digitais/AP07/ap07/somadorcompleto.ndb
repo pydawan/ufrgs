@@ -1,0 +1,28 @@
+NDB006
+The number of symbol table entries is: 3
+The length of the symbol table is: 45
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|meiosomador:1|
+>	|meiosomador:2|
+
+The number of name info structs is : 14
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:4	|
+#	IGdp	!	Cin	m
+$	IGdq	!	Cout	p
+%	IGdp	!	IN1	n
+&	IGdp	!	IN2	o
+'	IGdq	!	S	q
+(	IVOQ	.	+	:1	"(
+)	IVOQ	.	*	:2	")
+*	INu}	.	)	Cout	")
++	INu}	.	(	S	"(
+,	IVOQ	>	/	:1	"3
+-	IVOQ	>	.	:2	"4
+.	INu}	>	-	Cout	"4
+/	INu}	>	,	S	"3

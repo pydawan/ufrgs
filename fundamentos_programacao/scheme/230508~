@@ -1,0 +1,19 @@
+;; The first three lines of this file were inserted by DrScheme. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname |230508|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #8(#t constructor repeating-decimal #f #t none #f ())))
+;; uma lista de palavras é
+;; empty ou
+;; (list p lp) onde p: string e lp: lista de palavras
+
+;; um email é uma estrutura onde
+;; id: number e corpo: lista de palavras 
+(define-struct email ( id corpo ))
+
+;;uma mailbox é uma lista de emails
+
+;; search mailbox palavra -> number 
+;;funcao que dado uma mailbox e uma palavra, retorna quantas vezes a palavra é encontrada
+;; (search (list (make-email 1 (list "oi" "tchau" "ateh mais")) (make-email 1 (list "ola" "tchau" "pedra")) (make-email 1 (list "pedra" "tchau" "gato")) "oi" retorna 1
+(define (search mb p)
+  (cond
+    [(empty? mb) 

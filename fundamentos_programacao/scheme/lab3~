@@ -1,0 +1,4 @@
+(define-struct (nodo valor esq dir)) 
+(define (teste ab)
+	(cond
+		[(nodo? ab)(cons (nodo-valor ab) (append (teste nodo-esq ab) (teste nodo-dir ab)))]))

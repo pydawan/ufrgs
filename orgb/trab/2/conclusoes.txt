@@ -1,0 +1,8 @@
+Conjuntos = 1, entao COMPLETAMENTE ASSOCIATIVO
+
+Associatividade = 1, entao MAPEAMENTO DIRETO
+	mais linhas, melhor para localidade temporal
+O restante, eh set associative
+
+	Linhas maiores (tam. bloco), maior penalidade de miss
+

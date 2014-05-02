@@ -1,0 +1,11 @@
+-t1: 0ns
+t2: 15ns
+	D=1, C=0 -> notQ2=0(atraso) -> Q1=1. Se clock virar 1, entao notQ1=0.
+t3: 20ns
+	C=1 -> notQ1=0. -> Q2=1 -> S=0,R=1 -> Q=1, notQ=0
+
+Em t1 (15ns), D varia de 0 para 1.
+Em t2 (20ns), CLOCK varia de 0 para 1.
+Em t3 (21ns), Q1 varia de 0 para 1.
+Em t4 (26ns), PR varia de 1 para 0.
+Em t5 (29ns), Q varia de 0 para 1.

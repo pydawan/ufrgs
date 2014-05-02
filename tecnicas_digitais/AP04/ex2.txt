@@ -1,0 +1,15 @@
+Titulo: Circuito RC
+
+
+vin 1 0 pulse( 0 10  0 10u 10u 1m 02m)
+* ..... pulse(v1 v2 TD TR  TF  PW PER)
+
+r1 1 2 2.2k
+c1 2 0 80n
+
+r2 3 0 2.2k
+c2 1 3 80n
+
+.tran 0.001m 5m
+.print tran v(1) v(2) v(3)
+.end

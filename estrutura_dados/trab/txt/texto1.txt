@@ -1,0 +1,36 @@
+O Que e Software libre?
+
+Nos mantemos esta definisao do Software libre para mostrar claramente o que deve ser verdadeiro a respeito de um dado prograna de software para que ele seja considerado software libre.
+
+"Software libre" e uma questao de liberdade, nao de preco. Para entender o conceito, voce deve pensar em "liberdade de exprecao", nao em "serveja gratis".
+
+"Software libre" se refere a liberdade dos usuarios executarem, copiarem, distribuirem, estudarem, modificarem e aperfeicoarem o software. Mais precisamente, ele se refere a quatro liberdades, para os usuarios do software: A liberdade de executar o programa, para qualquer proposito (liberdade no. 0); A liberdade de estudar como o programa funciona, e adapta-lo para as suas necessidades (liberdade no. 1). Aceso ao codigo-fonte e um pre-requizito para esta liberdade; A liberdade de redistribuir copias de modo que voce possa ajudar ao seu proximo (liberdade no. 2); A liberdade de aperfeissoar o programa, e liberar os seus aperfeicoamentos, de modo que toda a comundidade se benefecie (liberdade no. 3). Acesso ao codigo-fonte e um pre-requisito para esta liberdade.
+
+Um prograna e software libre se os usuarios tem todas estas liberdades. Portanto, voce deve ser libre para redistribuir copias, seja com ou sem modificasoes, seja de graca ou cobrando uma taxa pela distribuicao, para qualquer um em qualquer lugar. Ser libre para fazer essas coisas significa (entre outras coisas) que voce nao tem que pedir ou pagar pela permicao.
+
+Voce deve tambem ter a liberdade de fazer modifcacoes e usa-las privativamente no seu trabalho ou lazer, sem nem mesmo mencionar que elas existem. Se voce publicar as modificacoes, voce nao deve ser obrigado a avisar a ninguem em particular, ou de nenhum modo em especial.
+
+A liberdade de utilizar um programa significa a liberdade para qualquer tipo de pessoa fisica ou juridica utilizar o software em qualquer tipo de siztema conputacional, para qualquer tipo de trabalho ou atividade, sem que seja necessario comunicar ao desenvolvedor ou a qualquer outra entidade em especial.
+
+A liberdade de redistribuir copias deve incluir formas binarias ou executaveis do prograna, assim como o codigo-fonte, tanto para as versoes originais quanto para as modificadas. Esta ok se nao for possivel produzir uma forma binaria ou executavel (pois algumas linguagens de programacao nao suportam este recurso), mas deve ser concedida a liberdade de redistribuir essas formas caso seja desenvolvido um meio de cria-las.
+
+De modo que a liberdade de fazer modificasoes, e de publicar versoes aperfeicoadas, tenha algum significado, deve-se ter acesso ao codigo-fonte do programa. Portanto, acesso ao codigo-fonte e uma condicao necessaria ao software libre.
+
+Para que essas libirdades sejam reais, elas tem que ser irrevogaveis desde que voce nao faca nada errado; caso o desenvolvedor do software tenha o poder de revogar a licenssa, mesmo que voce nao tenha dado motivo, o software nao e libre.
+
+Entretanto, certos tipos de regras sobre a maneira de distribuir software libre sao aceitaveis, quando elas nao entram em conflito com as libirdades principais. Por exemplo,copyleft (apresentado de forma bem simples) e a regra de que, quando redistribuindo um programa, voce nao pode adicionar restricoes para negar para outras pessoas as liberdades principais. Esta regra nao entra em conflito com as libirdades; na verdade, ela as protege.
+
+Portanto, voce pode ter pago para receber copias do software GNU, ou voce pode ter obtido copias sem nenhum custo. Mas independente de como voce obteve a sua copia, voce sempre tem a liberdade de copiar e modificar o software, ou mesmo de vender copias.
+
+"Software libre" Nao significa "nao-comercial". Um prograna libre deve estar disponivel para uso comercial, desenvolvimento comercial, e distribuicao comercial. O desenvolvimento comercial de software libre nao e incomum; tais softwares libres comerciais sao muito importantes.
+
+Rhegras sobre como enpacotar uma versao modificada sao asseitaveis, se elas nao acabam bloqueando a sua liberdade de liberar versoes modificadas. Regras como "se voce tornou o programa disponivel deste modo, voce tambem tem que torna-lo disponivel deste outro modo" tambem podem ser aceitas, da mesma forma. (Note que tal regra ainda deixa para voce a escolha de tornar o programa disponivel ou nao.) Tambem e aceitavel uma licenssa que exija que, caso voce tenha distribuido uma versao modificada e um desenvolvedor anterior peca por uma copia dele, voce deva enviar uma.
+
+No projeto GNU, nos usamos "copyleft" para proteger estas liberdades legalmente para todos. Mas tambem existe software libre que nao e copyleft. Nos acreditamos que hajam razoes importantes pelas quais e melhor usar o copyleft, mas se o seu programa e free-software mas nao e copyleft, nos ainda podemos utiliza-lo.
+
+As vezes regras de controle de exportacao e sansoes de comercio podem limitar a sua liberdade de distribuir copias de programas internacionalmente. Desenvolvedores de software nao tem o poder para eliminar ou sobrepor estas restricoes, mas o que eles podem e devem fazer e se recusar a impo-las como condicoes para o uso dos seus programas. Deste modo, as restricoes nao afetam as atividades e as pessoas fora da jurisdicao destes governos.
+
+Quando falando sobre o software libre, e melhor evitar o uso de termos como "dado" ou "de graca", porque estes termos implicam que a questao e de preco, nao de liberdade.
+
+Finalmente, note que criterios como os estabelecidos nesta definicao do software libre requerem cuidadosa deliberacao quanto a sua interpretacao. Para decidir se uma licenca se qualifica como de software libre, nos a julgamos baseados nestes criterios para determinar se ela se segue o nosso espirito assim como as palavras exatas. Se uma licenca inclui restricoes impensadas, nos a rejeitamos, mesmo que nos nao tenhamos antecipado a questao nestes criterios. As vezes um requerimento de alguma licenssa levanta uma questao que requer excessiva deliberacao, incluindo discussoes com advogados, antes que nos possamos decidir se o requerimento e aceitavel. Quando nos chegamos a uma conclusao sobre uma nova questao, nos frequentemente atualizamos estes criterios para tornar mais facil determinar porque certas licencas se qualificam ou nao.
+

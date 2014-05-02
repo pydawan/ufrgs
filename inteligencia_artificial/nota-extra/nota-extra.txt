@@ -1,0 +1,15 @@
+Ae galera, segue trabalinho em dupla valendo nota extra.
+
+É bem tranquilo, a idéia é construir um sistema especialista simples, com o auxílio de aprendizagem de máquina para apoiar a etapa de engenharia de conhecimento.
+Para a realização deste projeto vai precisar de um conjunto de dados para usar como entrada no sistema de aprendizado de máquina weka. Existem centenas de conjuntos de dados já no formato weka disponíveis neste link.
+Depois de selecionado o conjunto de dados, você deve utilizar algum algoritmo de aprendizado de máquina para gerar regras a partir daquele conjunto de dados. Por exemplo, você pode utilizar o J48, que implementa o algoritmo de árvore de decisão visto em aula, para gerar uma árvore e converter os ramos da árvore em regras. Você não precisa utilizar todas as regras geradas, pois em muitos casos é gerado um grande número de regras (centenas, ou até mesmo milhares). Se esse for o caso, selecione um subconjunto (por volta de 10) baseado em quantos exemplos são cobertos por aquela regra (quanto mais, melhor).
+Para construir o sistema especialista, você pode utilizar o software EXPERT Sinta. Neste http://www.lia.ufc.br/~bezerra/exsinta/ existe uma apresentação que explica o funcionamento do sistema. O sofware também acompanha uma documentação detalhada, com exemplos, de como pode ser utilizado.
+Você deve submeter um relatório contendo:
+- Arvore decisão.
+- Datalhes da base treinamento.
+-  Matrix de confusão.
+- Precisão, recall e acurácia.
+- Regras de classificação fator de suporte e confiança.
+- Arquivo gerado pelo Expert Sinta.
+Abrass
+

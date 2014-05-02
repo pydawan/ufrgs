@@ -1,0 +1,129 @@
+Terminais
+[ john ]
+[ steve ]
+[ yan ]
+[ striker ]
+[ winner ]
+[ looser ]
+[ manager ]
+[ team ]
+[ player ]
+[ fan ]
+[ teams ]
+[ players ]
+[ strikers ]
+[ winners ]
+[ loosers ]
+[ managers ]
+[ fans ]
+[ shot ]
+[ play ]
+[ kick ]
+[ dribble ]
+[ stop ]
+[ throw-in ]
+[ touch ]
+[ shots ]
+[ plays ]
+[ kicks ]
+[ dribbles ]
+[ stops ]
+[ touches ]
+[ ball ]
+[ goalpost ]
+[ opponent ]
+[ referee ]
+[ balls ]
+[ goalposts ]
+[ opponents ]
+[ referees ]
+[ because ]
+[ or ]
+[ and ]
+Variaveis
+[ FRASE ]
+[ SUJEITOA ]
+[ SUJEITOB ]
+[ PREDICADOA ]
+[ PREDICADOB ]
+[ DETERMINANTE ]
+[ SUBSTANTIVOSINGULARX ]
+[ SUBSTANTIVOPLURALX ]
+[ VERBOINTRANSITIVOSINGULAR ]
+[ VERBOINTRANSITIVOPLURAL ]
+[ VERBOTRANSITIVOSINGULAR ]
+[ VERBOTRANSITIVOPLURAL ]
+[ OBJETOSINGULAR ]
+[ SUBSTANTIVOSINGULARY ]
+[ SUBSTANTIVOPLURALY ]
+[ CONJUNCAO ]
+Inicial
+[ FRASE ]
+Regras
+[ FRASE ] > [ SUJEITOA ] [ PREDICADOA ] ;0.2
+[ FRASE ] > [ SUJEITOB ] [ PREDICADOB ] ;0.2
+[ FRASE ] > [ SUJEITOA ] [ VERBOINTRANSITIVOSINGULAR ] ;0.1
+[ FRASE ] > [ SUJEITOB ] [ VERBOINTRANSITIVOPLURAL ] ;0.1
+[ FRASE ] > [ SUJEITOB ] [ PREDICADOB ] ;0.1
+[ FRASE ] > [ SUBSTANTIVOSINGULARX ] [ PREDICADOA ] ;0.1
+[ FRASE ] > [ SUBSTANTIVOPLURALX ] [ PREDICADOB ] ;0.1
+[ FRASE ] > [ FRASE ] [ FRASECONJUNCAO ] ;0.1
+[ FRASECONJUNCAO ] > [ CONJUNCAO ] [ FRASE ] ;1
+[ SUJEITOA ] > [ DETERMINANTE ] [ SUBSTANTIVOSINGULARX ] ;1
+[ SUJEITOB ] > [ DETERMINANTE ] [ SUBSTANTIVOPLURALX ] ;1
+[ SUBSTANTIVOSINGULARX ] > [ john ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ steve ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ team ] ;0.2
+[ SUBSTANTIVOSINGULARX ] > [ player ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ yan ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ striker ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ winner ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ looser ] ;0.1
+[ SUBSTANTIVOSINGULARX ] > [ manager ] ;0.1
+[ SUBSTANTIVOPLURALX ] > [ teams ] ;0.2
+[ SUBSTANTIVOPLURALX ] > [ players ] ;0.1
+[ SUBSTANTIVOPLURALX ] > [ strikers ] ;0.2
+[ SUBSTANTIVOPLURALX ] > [ winners ] ;0.1
+[ SUBSTANTIVOPLURALX ] > [ loosers ] ;0.2
+[ SUBSTANTIVOPLURALX ] > [ managers ] ;0.2
+[ DETERMINANTE ] > [ the ] ;0.8
+[ DETERMINANTE ] > [ a ] ;0.2
+[ PREDICADOA ] > [ VERBOTRANSITIVOSINGULAR ] [ OBJETOSINGULAR ] ;0.8
+[ PREDICADOA ] > [ VERBOTRANSITIVOSINGULAR ] [ OBJETOPLURAL ] ;0.2
+[ PREDICADOB ] > [ VERBOTRANSITIVOPLURAL ] [ OBJETOSINGULAR ] ;0.7
+[ PREDICADOB ] > [ VERBOTRANSITIVOPLURAL ] [ SUBSTANTIVOPLURALY ] ;0.3
+[ VERBOINTRANSITIVOSINGULAR ] > [ plays ] ;0.4
+[ VERBOINTRANSITIVOSINGULAR ] > [ dribbles ] ;0.2
+[ VERBOINTRANSITIVOSINGULAR ] > [ kicks ] ;0.2
+[ VERBOINTRANSITIVOSINGULAR ] > [ throws-in ] ;0.2
+[ VERBOINTRANSITIVOPLURAL ] > [ shots ] ;0.2
+[ VERBOINTRANSITIVOPLURAL ] > [ play ] ;0.2
+[ VERBOINTRANSITIVOPLURAL ] > [ dribble ] ;0.2
+[ VERBOINTRANSITIVOPLURAL ] > [ kick ] ;0.2
+[ VERBOINTRANSITIVOPLURAL ] > [ shot ] ;0.1
+[ VERBOINTRANSITIVOPLURAL ] > [ throw-in ] ;0.1
+[ VERBOTRANSITIVOSINGULAR ] > [ shots ] ;0.1
+[ VERBOTRANSITIVOSINGULAR ] > [ kicks ] ;0.2
+[ VERBOTRANSITIVOSINGULAR ] > [ plays ] ;0.1
+[ VERBOTRANSITIVOSINGULAR ] > [ dribbles ] ;0.3
+[ VERBOTRANSITIVOSINGULAR ] > [ stops ] ;0.2
+[ VERBOTRANSITIVOSINGULAR ] > [ touches ] ;0.1
+[ VERBOTRANSITIVOPLURAL ] > [ shot ] ;0.1
+[ VERBOTRANSITIVOPLURAL ] > [ play ] ;0.2
+[ VERBOTRANSITIVOPLURAL ] > [ kick ] ;0.1
+[ VERBOTRANSITIVOPLURAL ] > [ dribble ] ;0.3
+[ VERBOTRANSITIVOPLURAL ] > [ stop ] ;0.2
+[ VERBOTRANSITIVOPLURAL ] > [ touch ] ;0.1
+[ OBJETOSINGULAR ] > [ DETERMINANTE ] [ SUBSTANTIVOSINGULARY ] ;0.6
+[ OBJETOSINGULAR ] > [ DETERMINANTE ] [ SUBSTANTIVOPLURALY ] ;0.4
+[ SUBSTANTIVOSINGULARY ] > [ ball ] ;0.4
+[ SUBSTANTIVOSINGULARY ] > [ goalpost ] ;0.1
+[ SUBSTANTIVOSINGULARY ] > [ opponent ] ;0.4
+[ SUBSTANTIVOSINGULARY ] > [ referee ] ;0.1
+[ SUBSTANTIVOPLURALY ] > [ balls ] ;0.4
+[ SUBSTANTIVOPLURALY ] > [ goalposts ] ;0.1
+[ SUBSTANTIVOPLURALY ] > [ oponnents ] ;0.4
+[ SUBSTANTIVOPLURALY ] > [ referees ] ;0.1
+[ CONJUNCAO ] > [ because ] ;0.3
+[ CONJUNCAO ] > [ or ] ;0.3
+[ CONJUNCAO ] > [ and ] ;0.4

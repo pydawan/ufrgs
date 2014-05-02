@@ -1,0 +1,9 @@
+float:variavel_flutuante;
+int:variavel_inteira;
+/* var : booleano; */
+char:variavel_caractere;
+int:minha_funcao  ()
+{
+        a=10;
+v[a+1]=5[10];
+}

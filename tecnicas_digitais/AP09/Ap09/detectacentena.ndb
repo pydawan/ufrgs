@@ -1,0 +1,127 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 115
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	9	1	:115	#%
+#	IeEA	!	9	1	:116	#&
+$	IeEA	!	9	1	:117	#'
+%	IeEA	!	9	1	:118	#(
+&	IeEA	!	9	1	:119	#)
+'	IeEA	!	9	1	:120	#*
+(	IeEA	!	9	1	:121	#+
+)	IeEA	!	9	1	:122	#,
+*	IeEA	!	9	1	:123	#-
++	IeEA	!	9	1	:124	#.
+,	IeEA	!	9	1	:125	#/
+-	IeEA	!	9	1	:126	#0
+.	IeEA	!	9	1	:127	#1
+/	IeEA	!	9	1	:128	#2
+0	IeEA	!	9	1	:129	#3
+1	IeEA	!	9	1	:130	#4
+2	IeEA	!	9	1	:131	#5
+3	IeEA	!	9	1	:132	#6
+4	IeEA	!	9	1	:133	#7
+5	IeEA	!	9	1	:134	#8
+6	IeEA	!	9	1	:135	#9
+7	IeEA	!	9	1	:136	#:
+8	IeEA	!	9	1	:137	#;
+9	IeEA	!	9	1	:138	#<
+:	IeEA	!	9	1	:139	#=
+;	IeEA	!	9	1	:140	#>
+<	IeEA	!	9	1	:141	#?
+=	IeEA	!	9	1	:142	#@
+>	IeEA	!	9	1	:143	#A
+?	IeEA	!	9	1	:144	#B
+@	IeEA	!	9	1	:145	#C
+A	IeEA	!	9	1	:146	#D
+B	IeEA	!	9	1	:147	#E
+C	IeEA	!	9	1	:148	#F
+D	IeEA	!	9	1	:149	#G
+E	IeEA	!	9	1	:150	#H
+F	IeEA	!	9	1	:151	#I
+G	IeEA	!	9	1	:152	#J
+H	IeEA	!	9	1	:153	#K
+I	IeEA	!	9	1	:154	#L
+J	IeEA	!	9	1	:155	#M
+K	IeEA	!	9	1	:156	#N
+L	IeEA	!	9	1	:157	#O
+M	IeEA	!	9	1	:158	#P
+N	IeEA	!	9	1	:159	#Q
+O	IeEA	!	9	1	:160	#R
+P	IeEA	!	9	1	:161	#S
+Q	IeEA	!	9	1	:162	#T
+R	IeEA	!	9	1	:163	#U
+S	IeEA	!	9	1	:164	#V
+T	IeEA	!	9	1	:165	#W
+U	IeEA	!	9	1	:166	#X
+V	IeEA	!	9	1	:167	#Y
+W	IeEA	!	9	1	:168	#Z
+X	IeEA	!	9	1	:169	#[
+Y	IeEA	!	9	1	:170	#\
+Z	IeEA	!	9	1	:171	#]
+[	IeEA	!	9	1	:172	#^
+\	IeEA	!	9	1	:173	#_
+]	IeEA	!	9	1	:174	#`
+^	IeEA	!	9	1	:175	#a
+_	IeEA	!	9	1	:176	#b
+`	IeEA	!	9	1	:177	#c
+a	IeEA	!	9	1	:178	#d
+b	IeEA	!	9	1	:179	#e
+c	IeEA	!	9	1	:180	#f
+d	IeEA	!	9	1	:181	#g
+e	IeEA	!	9	1	:182	#h
+f	IeEA	!	9	1	:183	#i
+g	IeEA	!	9	1	:184	#j
+h	IeEA	!	9	1	:185	#k
+i	IeEA	!	9	1	:186	#l
+j	IeEA	!	9	1	:187	#m
+k	IeEA	!	9	1	:188	#n
+l	IeEA	!	9	1	:189	#o
+m	IeEA	!	9	1	:190	#p
+n	IeEA	!	9	1	:191	#q
+o	IeEA	!	9	1	:192	#r
+p	IeEA	!	9	1	:193	#s
+q	IeEA	!	9	1	:194	#t
+r	IeEA	!	9	1	:195	#u
+s	IeEA	!	9	1	:196	#v
+t	IeEA	!	9	1	:197	#w
+u	IeEA	!	9	1	:198	#x
+v	IeEA	!	9	1	:199	#y
+w	IeEA	!	9	1	:200	#z
+x	IeEA	!	9	1	:201	#{
+y	IeEA	!	9	1	:202	#|
+z	IeEA	!	9	1	:203	#}
+{	IeEA	!	9	1	:204	#~
+|	IeEA	!	9	1	:205	$!
+}	IeEA	!	9	1	:206	$"
+~	IeEA	!	9	1	:207	$#
+"!	IeEA	!	9	1	:208	$$
+""	IeEA	!	9	1	:209	$%
+"#	IeEA	!	9	1	:210	$&
+"$	IeEA	!	9	1	:211	$'
+"%	IeEA	!	9	1	:212	$(
+"&	IeEA	!	9	1	:213	$)
+"'	IeEA	!	9	1	:214	$*
+"(	IeEA	!	9	1	:215	$+
+")	IeEA	!	9	1	:216	$,
+"*	IeEA	!	9	1	:217	$-
+"+	IeEA	!	9	1	:218	$.
+",	IeEA	!	9	1	:219	$/
+"-	IeEA	!	9	1	:220	$0
+".	IeEA	!	9	1	:221	$1
+"/	IeEA	!	9	1	:222	$2
+"0	IeE[	!	3	17	c	u
+"1	IeEZ	!	2	17	I1	t
+"2	L8ef	!	2	17	1	"0	I2	s
+"3	L8ef	!	2	17	1	"0	I3	r
+"4	L8ef	!	2	17	1	"0	I4	q
+"5	L8ef	!	2	17	1	"0	I5	p
+"6	L8ef	!	2	17	1	"0	I6	o

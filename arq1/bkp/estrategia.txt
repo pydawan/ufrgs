@@ -1,0 +1,70 @@
+Estrategia para programa Jogo da Vida:
+
+variaveis:
+
+geraçao: 255 (decrementar e testar nela)
+testesporcelula: sempre 8 testes
+vizinhosvivos: incrementando conforme aparecem
+morta:0
+viva:1
+
+algoritmo AvaliaMatriz:
+{
+se geracao = 0 entao sai da subrotina
+se matrizatual=0
+	entao meminicial<-214
+	proximamatriz<-1
+	mirror<-172
+senao
+	meminicial<-172
+	proximamatriz<-0
+	mirror<-214
+
+coluna<-1;
+linha<-1;
+
+executa avaliacelula;
+
+se coluna=5
+	se linha=5
+		entao matrizatual<-proximamatriz
+		geracao<-geracao-1
+		pula para executa AvaliaMatriz
+	senao
+		meminicial<-meminicial+3
+		linha<-linha+1
+		coluna<-1
+	
+senao
+	coluna<-coluna+1
+	meminicial<-meminicial+1
+	pula para executa avaliacelula
+}
+
+
+algoritmo AvaliaCelula:
+{
+contador<-8
+vizinho<-0
+teste se contador=0
+	entao se vizinho = 3 entao mem(mirror)<-viva
+	      se vizinho = 2 entao se mem(meminicial) = viva entao mem(mirror)<-viva
+	      senao mem(mirror)<-morta
+	      sai da subrotina
+senao
+	se mem(meminicial-contador) != 0 entao vizinho<-vizinho+1
+contador<-contador-1
+vai para teste
+
+
+42+13+91
+
+
+
+inicio:
+armazena geracao
+avaliamatriz
+shr geracao
+se carry, executa migrabloco
+
+

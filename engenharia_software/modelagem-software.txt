@@ -1,0 +1,24 @@
+Modelagem de software
+
+modelo -> abstracao -> essencial, omite detalhes que nao sao relevantes.
+
+pq modelar software:
+	a. entender problema complexo - como desenvolver software
+	b. testar antes do todo
+	c. para comunicacao com os envolvidos
+	d. visualizacao - explorar multiplas solucoes sem implementa-las
+
+ambiente externo
+interacao com o sistema
+estrutura do sistema
+comportamento
+
+arquitetura 4+1 (abaixo,visoes):
+	conceituais
+		logica: RF, subsistemas, pacotes, classes
+		processo: 
+	fisicas
+		implementacao: 
+		implantacao: entrega, instalacao
+	+1
+	requisitos(+1): descricao do comportamento

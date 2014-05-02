@@ -1,0 +1,4 @@
+float:variavel_flutuante;
+int:variavel_inteira;
+char:variavel_caractere;
+int:minha_funcao () float:local; { a=5.0}

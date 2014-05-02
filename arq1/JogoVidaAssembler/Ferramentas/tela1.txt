@@ -1,0 +1,24 @@
+                                                            | Arquivo:         
+                                                            |                  
+                                                            |                  
+                                                            | Geracoes:        
+                                                            | 0000000000       
+                                                            |                  
+                                                            | Modo:            
+                                                            |                  
+                                                            |                  
+                                                            | Temporizador:    
+                                                            |  0               
+                                                            |                  
+                                                            +------------------
+                                                            | Comandos:        
+                                                            | P: passo a passo 
+                                                            | R: rodar         
+                                                            | T: def. tempo    
+                                                            | C: carga arquivo 
+                                                            | Q: terminar      
+                                                            +------------------
+                                                            | Entrada:         
+                                                            |                  
+                                                            | Mensagens:       
+                                                            |                  

@@ -1,0 +1,46 @@
+Conjuntos = 1, entao COMPLETAMENTE ASSOCIATIVO
+
+Associatividade = 1, entao MAPEAMENTO DIRETO
+	mais linhas, melhor para localidade temporal
+O restante, eh set associative
+
+	Linhas maiores (tam. bloco), maior penalidade de miss
+---------------------------------
+
+1. Investigar a influência do tipo de mapeamento empregado (direto, associativo por conjunto e
+totalmente associativo) e da política de reposição no desempenho da cache
+
+a) Dentre os experimentos realizados, qual das políticas de reposição apresenta o melhor resultado para cada uma das caches em sua opinião? Por que?
+	Para cache de dados a política LRU teve performance destacada em relação as outras pelo fator reutilização, característica forte de dados. Todo programa possui muitas rotinas que trabalham com as mesmas varíaveis (por consequência mesmo endereço de memória) e, além disso, estas rotinas  acontecem em um espaco de tempo contínuo. Estes princípios fazem com que o conceito de localidade temporal, empregado em caches, seja decisivo no ganho de performance do programa. 
+	Quanto a cache de instruções, a diferença de performance entre as políticas de reposição não foi muito grande. De qualquer forma, na média, a melhor performance se deu na política randômica. Acredito que a política LRU, a com piores resultados, não tenha tido muito sucesso pelo fato de que instruções são reutilizadas apenas em laços que, apesar de representarem boa parte de um programa, não assumem sua totalidade. Quanto a performance da política randômica, conforme discutido em aula, por termos uma grande probabilidade de acertarmos com a escolha de reposição, no caso 1/32, isso dá a ela boas condições de ser uma boa escolha.
+
+b) A primeira linha da tabela acima representa que tipo de cache em termos de mapeamento? Considerando essa mesma linha citada, explique o porquê dos resultados obtidos para as três políticas aplicadas.
+	Representa o mapeamento direto. O resultado para este mapeamento foi exatamente o mesmo para todas políticas de reposição. Isto acontece porquê o fato de executarmos o mesmo programa e não termos mais de uma alternativa para alocação de cada bloco de dados|instruções faz com que a dinâmica de utilização da cache seja exatamente a mesma.
+
+c) Considerando-se que as caches de dados e instruções estão separadas, qual a melhor combinação (em termos da menor taxa de misses obtida) entre cache de instruções e de dados considerando-se qualquer possibilidade de configuração para ambas (em termos de associatividade, no de conjuntos e política de reposição)?
+	Cache Instrucoes:
+		Num Conj: 8
+		Tam Blocos: 32
+		Associatividade: 4
+		Política: randômica
+	Cache Dados:
+		Num Conj: 8
+		Tam Blocos: 32
+		Associatividade: 4
+		Política: LRU
+
+d) Qual o comportamento das duas caches quando do aumento da associatividade (e conseqüente diminuição do número de conjuntos)?
+	As duas caches possuem melhor performance no momento em que há certo equilíbrio entre o número de conjuntos e associatividade. Nos extremos, consequentemente no aumento da associatividade, a performance começa a diminuir em relação ao momento de equilíbrio.
+
+2. Investigar a influência da variação do tamanho do bloco no desempenho da cache
+
+a) Qual o comportamento observado para as duas caches em termos de percentual de erro no seu acesso?
+	Para a cache de instruções, conforme aumentamos o tamanho do bloco, diminuímos o percentual de erro. Já a cache de dados, conforme aumentamos o tamanho do bloco, aumentamos o percentual de erro.
+
+b) Como você explicaria os comportamentos observados para as caches de instruções e de dados?
+	Por padrão, um programa costuma ter a próxima instrução a ser executada em posição de memória sequente a atual. Esta característica de localidade espacial é auxiliada quando aumentamos o tamanho do bloco utilizado na cache, pois ao trazermos determinada instrução para a cache, suas subsequentes são trazidas juntamente.
+	Ao contrário, os dados de um programa estão espalhados pela memória. Ao utilizarmos um tamanho de bloco elevado, temos uma penalidade de miss muito maior, pois utilizamos apenas parte do bloco trazido, onerando a utilizacão da cache. Por consequência do espalhamento dos dados pela memória, quando aumentamos o tamanho dos blocos, diminuímos o tamanho de linhas disponíveis, fazendo com que o algoritmo de reposição seja acionado mais vezes. Isto, obviamente, onera a performance do programa.
+
+
+3. Investigar a influência do tamanho total da cache e do tamanho de bloco no desempenho da cache
+

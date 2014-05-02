@@ -1,0 +1,109 @@
+;Germano de Mello Andersson - Turma B
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Registrador X sera meu ponteiro para celula atualmente testada, exceto na subrotina MigraMatriz
+; Registrador A sera constante 1, exceto na subrotina MigraMatriz
+; Registrador B será meu TEMP, exceto na subrotina MigraMatriz
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+Inicio:		ldr a #1
+		ldr b 255		; vou manter a geracao pra saber se ela eh impar.
+		str b geracao
+		jsr AvaliaMatriz
+		ldr a 255
+		shr a
+		jc MigraMatriz		; se for impar, matriz final ficou no Mirror. preciso passar ela para Orig.
+Fim:		hlt
+
+AvaliaMatriz:	nop			
+		jz    FimAvaliaMatriz	; sempre terei a geracao carregada nesteponto. acabaram geracoes. 
+		ldr b matrizatual
+		jz    MatrizOrig	; testa se processamento ocorrera entre 172e204 (matrizmirror) ou 214e246 (matrizorig)
+MatrizMirror:	ldr x #172 		; prepara processamento para matriz entre 172e204	
+		ldr b #0
+		str b matrizatual
+		ldr b #214
+		str b mirror
+		jmp   IniciaVars
+MatrizOrig:	ldr x #214		; prepara processamento para matriz entre 214e246 		
+		str a matrizatual	
+		ldr b #172
+		str b mirror
+IniciaVars:	str a coluna
+		str a linha
+MontaJogoVida:	jsr   AvaliaCelula	; aqui comeca a brincadeira! avaliaremos celulas ate que coluna e linha = 5.
+		ldr b coluna		
+		sub b #5
+		jz    PulaLinha		; se coluna = 5 goto PulaLinha
+		ldr b coluna		; senao coluna, meminicial e mirror incrementa e avaliamosnovacelula
+		add b #1
+		str b coluna
+		add x #1
+		ldr b mirror
+		add b #1
+		str b mirror
+		jmp   MontaJogoVida
+PulaLinha:	ldr b linha	
+		sub b #5
+		jz    FimGeracao	; se linha = 5 acabou essa geracao.
+		add b #6		; senao coluna volta a 1 e linha deve pular (somo 6 devido aos 5 q tirei e 1 q deve vir)
+		str b linha
+		str a coluna
+		add x #3		; o pulo da linha. para pular bordas, mem incrementa 3
+		ldr b mirror		
+		add b #3
+		str b mirror  
+FimGeracao:	ldr b geracao
+		sub b #1
+		str b geracao
+		jmp   AvaliaMatriz+1	; o +1 eh devido ao primeiro byte reservado para a subrotina	
+FimAvaliaMatriz:jmp   AvaliaMatriz,I
+
+AvaliaCelula:	nop
+		nop
+		nop			
+		ldr b 248,x		; -8 posicoes de meminicial = vizinho1 CONFERIR ESSES VALORES
+		add b 249,x		; -7 posicoes de meminicial = vizinho2
+		add b 250,x		; -6
+		add b 255,x		; -1
+		add b 1,x		; +1
+		add b 6,x		; +6
+		add b 7,x		; +7
+		add b 8,x		; +8
+		sub b #3
+		jz    Viva	; se tem 3 vizinhos prox geracao = viva	
+		add b #1	
+		jz    TemDois	; se tem 2 vizinhos, depende
+TemDois:	ldr b 0,x	; carrega estado atual da celula
+		jz    Morta	; se morta, permanece morta
+Viva:		str a mirror,I	; aqui eh viva
+		jmp AvaliaCelula,I 
+Morta:		ldr b #0	; aqui eh morta
+		str b mirror,I
+		jmp AvaliaCelula,I
+
+; aqui precisarei de todas forcas. meus registradores mudarao de funcao.
+MigraMatriz:	nop
+		ldr x #172		; de x terei o mirror e memoriginal = mirror + 42
+		ldr b 33		; contador do while
+WhileMigra:	ldr a 0,x		; aqui eu carrego memoria que esta no mirror
+		str a 42,x		; aqui eu armazeno esse valor na matriz original
+		add x #1
+		sub b #1
+		jz    FimMigraMatriz
+		jmp   WhileMigra
+FimMigraMatriz:	jmp   MigraMatriz,I	 
+
+
+;variaveis
+org 159
+matrizatual:	db 0
+mirror:		db 0
+coluna:		db 1
+linha:		db 1
+geracao:	db 0
+
+
+; matriz principal -> 206a254 ou 172a204
+; matriz mirror -> 164a205 ou 214a246

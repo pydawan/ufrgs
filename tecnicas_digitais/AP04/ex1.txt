@@ -1,0 +1,17 @@
+Titulo: Circuito Resistivo Simples
+
+* fontes
+vcc 1 0  8.5
+
+* circuito
+r1 1 2 560
+r2 2 0 1k
+r3 2 3 330
+r4 3 0 470
+
+* comandos
+
+.tran 0.1m 100m
+.print tran v(1) v(2) v(3)
+
+.end

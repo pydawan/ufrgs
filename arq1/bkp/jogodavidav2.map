@@ -1,0 +1,24 @@
+Símbolo     Valor Decimal   Valor Hexadecimal
+-------     -------------   -----------------
+INICIO                  0                   0
+FIM                    13                   D
+AVALIAMATRIZ             14                   E
+MATRIZMIRROR             21                  15
+MATRIZORIG             33                  21
+INICIAVARS             41                  29
+MONTAJOGOVIDA             45                  2D
+PULALINHA              69                  45
+FIMGERACAO             91                  5B
+FIMAVALIAMATRIZ             99                  63
+AVALIACELULA            101                  65
+MORTA                 126                  7E
+TEMDOIS               132                  84
+VIVA                  136                  88
+MIGRAMATRIZ            140                  8C
+WHILEMIGRA            145                  91
+FIMMIGRAMATRIZ            157                  9D
+MATRIZATUAL            159                  9F
+MIRROR                160                  A0
+COLUNA                161                  A1
+LINHA                 162                  A2
+GERACAO               163                  A3
