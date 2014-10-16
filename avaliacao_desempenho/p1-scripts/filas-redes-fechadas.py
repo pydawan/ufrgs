@@ -6,19 +6,28 @@ B=[]
 G=[]
 A=[]
 
-
-
+## Dados de entrada
+#N = 2 #tarefas no sistema
+#M = 3 #nro estacoes
+#U = [0.3,0.5,0.25]
+#p = [0.0,2.0,0.0]
+#
+#
+## Etapas
+##1. escolher um dos F's para ser y. calcular A via teorema de jackson
+#A=[0.6,1.0,1.0]
 
 # Dados de entrada
-N = 2 #tarefas no sistema
+N = 20 #tarefas no sistema
 M = 3 #nro estacoes
-U = [0.3,0.5,0.25]
+#U = [0.01,0.05,0.3]
+U = [1.0/0.01,1.0/0.05,1.0/0.3]
 p = [0.0,2.0,0.0]
 
 
 # Etapas
 #1. escolher um dos F's para ser y. calcular A via teorema de jackson
-A=[0.6,1.0,1.0]
+A=[1.0,0.8,1.0]
 
 #2 calcular B 
 for i in range(0,M): 
@@ -33,7 +42,7 @@ G[0] = 1.0
 for m in range(0,M): #para cada node
     for n in range(1,N+1): #para cada tarefa
         G[n] = G[n] + (B[m]*G[n-1])
-        #print "G["+str(n)+"]="+str(G[n])
+        print "G["+str(n)+"]="+str(G[n])
 
 
 
